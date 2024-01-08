@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background: blue;
+  height: 100vh;
+}
+
+h1 {
+  color: #fff;
+  display: none;
+}
+
+.buttons {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons button {
+  border: none;
+  color: white;
+  font-size: 22px;
+  transition: 100ms;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: blue;
+  border: 2px solid #fff;
+}
+
+.buttons button:hover {
+  color: yellow;
+  border: 2px solid yellow;
+}
+
+.buttons button:active {
+  transform: scale(0.8);
+}
+
+.box {
+  top: 0;
+  left: 0;
+  /* управление этажами */
+  transition: 50ms;
+  width: 200px;
+  height: 200px;
+  display: none;
+  position: absolute;
+}
+
+.box img{
+  width: 500px;
+  height: 270px;
+  margin: 50px;
+}
+
+.info-wrapper {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  column-gap: 30px;
+  justify-content: flex-end;
+}
+
+.info-wrapper h1 {
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.finish-window {
+  top: 0;
+  width: 100%;
+  display: none;
+  height: 100vh;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.finish-window h2 {
+  color: #fff;
+  font-size: 32px;
+  padding: 10px 15px;
+  background: #000;
+  border-radius: 8px;
+  font-family: fantasy;
+  letter-spacing: 1.5px; /* отступ между буквами */
+}
+.active{
+  border-radius: 50%;
+
+
+}
